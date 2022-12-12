@@ -10,6 +10,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".ButtonActivity"
+                android:exported="true" />
+        <activity
                 android:name=".TextViewActivity"
                 android:exported="true" />
         <activity

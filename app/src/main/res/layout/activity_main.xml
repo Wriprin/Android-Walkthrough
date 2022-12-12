@@ -1,109 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/rl_01"
+        android:id="@+id/ll_00"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:orientation="vertical">
 
-    <LinearLayout
-            android:id="@+id/ll_01"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
-            android:background="@color/teal_200" />
+    <Button
+            android:id="@+id/btn_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview"
+            android:layout_gravity="center" />
 
-    <LinearLayout
-            android:id="@+id/ll_02"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
-            android:background="@color/teal_200" />
+    <Button
+            android:id="@+id/btn_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button"
+            android:layout_gravity="center"/>
 
-    <RelativeLayout
-            android:id="@+id/rl_01"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_below="@+id/ll_01"
-            android:layout_marginLeft="3dp"
-            android:background="@color/teal_700" />
-
-    <!--
-        layout_toRightOf：相对置于指定 id 的控件右侧
-    -->
-    <RelativeLayout
-            android:id="@+id/rl_02"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@+id/rl_01"
-            android:background="@color/purple_200" />
-
-    <!--
-        layout_alignBottom：对齐底部
-    -->
-    <RelativeLayout
-            android:id="@+id/rl_03"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="50dp"
-            android:layout_alignBottom="@+id/rl_01"
-            android:background="@color/black" />
-
-    <!--
-        layout_below：相对置于指定 id 的控件下边
-    -->
-    <RelativeLayout
-            android:id="@+id/rl_05"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_below="@+id/rl_01"
-            android:layout_marginTop="20dp"
-            android:background="@color/purple_700">
-
-        <TextView
-                android:id="@+id/tv_01"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerInParent="true"
-                android:background="@color/white" />
-
-    </RelativeLayout>
-
-    <!--
-        layout_alignParentBottom：和父控件底部对齐
-    -->
-    <RelativeLayout
-            android:id="@+id/rl_04"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:background="@color/black" />
-
-    <RelativeLayout
-            android:id="@+id/rl_06"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="@color/black"
-            android:layout_below="@+id/rl_02"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@+id/rl_05">
-
-        <Button
-                android:id="@+id/btn_01"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:layout_centerInParent="true"
-                android:text="Hello, World"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:drawableRight="@drawable/wuli" />
-
-    </RelativeLayout>
-
-
-</RelativeLayout>
+</LinearLayout>

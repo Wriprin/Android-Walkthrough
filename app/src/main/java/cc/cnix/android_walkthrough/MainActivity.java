@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 声明对象
     private Button mBtnTextView;
+    private Button mBtnButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 跳转至 TextView 页面
                 Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnButton = findViewById(R.id.btn_02);
+        // btn_02 点击事件
+        mBtnButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 跳转至 Button 界面
+                Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
                 startActivity(intent);
             }
         });

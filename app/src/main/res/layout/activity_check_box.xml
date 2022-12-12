@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CheckBoxActivity">
+
+    <!--
+        开发语言
+    -->
+    <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="开发语言："
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    <CheckBox
+            android:id="@+id/cb_01"
+            android:layout_below="@id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java" />
+
+    <CheckBox
+            android:id="@+id/cb_02"
+            android:layout_below="@id/cb_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go" />
+
+    <CheckBox
+            android:id="@+id/cb_03"
+            android:layout_below="@id/cb_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JavaScript" />
+
+    <CheckBox
+            android:id="@+id/cb_04"
+            android:layout_below="@id/cb_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHP" />
+
+    <CheckBox
+            android:id="@+id/cb_05"
+            android:layout_below="@id/cb_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="etc." />
+
+
+    <!--
+        开发 IDE
+    -->
+    <LinearLayout
+            android:id="@+id/ll_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/cb_04">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开发 IDE:"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:textColor="#000" />
+
+        <CheckBox
+                android:id="@+id/cb_06"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:button="@drawable/selector_checkbox"
+                android:paddingLeft="10dp"
+                android:text="VS Code" />
+
+        <CheckBox
+                android:id="@+id/cb_07"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:button="@drawable/selector_checkbox"
+                android:paddingLeft="10dp"
+                android:text="IntelliJ IDEA" />
+
+        <CheckBox
+                android:id="@+id/cb_08"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:button="@drawable/selector_checkbox"
+                android:paddingLeft="10dp"
+                android:text="Visual Studio" />
+
+        <CheckBox
+                android:id="@+id/cb_09"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:button="@drawable/selector_checkbox"
+                android:paddingLeft="10dp"
+                android:text="etc." />
+    </LinearLayout>
+
+</RelativeLayout>

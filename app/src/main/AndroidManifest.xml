@@ -10,6 +10,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".CheckBoxActivity"
+                android:exported="true" />
+        <activity
                 android:name=".RadioButtonActivity"
                 android:exported="true" />
         <activity

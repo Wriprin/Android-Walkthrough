@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     // 声明对象
     private Button mBtnTextView;
     private Button mBtnButton;
+    private Button mBtnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 跳转至 Button 界面
                 Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnEditText = findViewById(R.id.btn_03);
+        // btn_03 点击事件
+        mBtnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 跳转至 EditText 界面
+                Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
                 startActivity(intent);
             }
         });

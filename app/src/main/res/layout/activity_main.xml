@@ -5,21 +5,31 @@
         android:id="@+id/ll_00"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="20dp"
         tools:context=".MainActivity"
         android:orientation="vertical">
 
     <Button
             android:id="@+id/btn_01"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="@string/textview"
             android:layout_gravity="center" />
 
     <Button
             android:id="@+id/btn_02"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="@string/button"
             android:layout_gravity="center"/>
 
+    <Button
+            android:id="@+id/btn_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/editview"
+            android:layout_gravity="center"/>
 </LinearLayout>

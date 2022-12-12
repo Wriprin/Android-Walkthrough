@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".RadioButtonActivity">
+
+
+    <!--
+        1. 常用属性
+    -->
+    <RadioGroup
+            android:id="@+id/rg_01"
+            android:layout_width="100dp"
+            android:orientation="vertical"
+            android:layout_height="100dp">
+
+        <RadioButton
+                android:id="@+id/rb_01"
+                android:layout_width="wrap_content"
+                android:text="男"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+
+        <RadioButton
+                android:id="@+id/rb_02"
+                android:layout_width="wrap_content"
+                android:text="女"
+                android:textSize="16sp"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content" />
+    </RadioGroup>
+
+
+    <!--
+        2. 自定义样式
+    -->
+    <RadioGroup
+            android:id="@+id/rg_02"
+            android:layout_width="100dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rg_01"
+            android:layout_height="100dp">
+
+        <RadioButton
+                android:id="@+id/rb_03"
+                android:layout_width="50dp"
+                android:height="30dp"
+                android:text="男"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:checked="true"
+                android:background="@drawable/selector_radiobutton"
+                android:layout_height="wrap_content" />
+
+        <RadioButton
+                android:id="@+id/rb_04"
+                android:layout_width="50dp"
+                android:height="30dp"
+                android:text="女"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/selector_radiobutton"
+                android:layout_height="wrap_content" />
+    </RadioGroup>
+
+</RelativeLayout>

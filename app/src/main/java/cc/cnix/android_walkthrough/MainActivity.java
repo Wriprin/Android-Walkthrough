@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,45 +14,57 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnTextView;
     private Button mBtnButton;
     private Button mBtnEditText;
+    private Button mBtnRadioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 获取 btn_01 按钮
+        // 获取控件对象
         mBtnTextView = findViewById(R.id.btn_01);
-
-        // btn_01 点击事件
-        mBtnTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 跳转至 TextView 页面
-                Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
-                startActivity(intent);
-            }
-        });
-
         mBtnButton = findViewById(R.id.btn_02);
-        // btn_02 点击事件
-        mBtnButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 跳转至 Button 界面
-                Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
-                startActivity(intent);
-            }
-        });
-
         mBtnEditText = findViewById(R.id.btn_03);
-        // btn_03 点击事件
-        mBtnEditText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 跳转至 EditText 界面
-                Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
-                startActivity(intent);
+        mBtnRadioButton = findViewById(R.id.btn_04);
+
+        // 注册监听器
+        setListeners();
+    }
+
+    public void setListeners() {
+        OnClick onClick = new OnClick();
+        mBtnTextView.setOnClickListener(onClick);
+        mBtnButton.setOnClickListener(onClick);
+        mBtnEditText.setOnClickListener(onClick);
+        mBtnRadioButton.setOnClickListener(onClick);
+    }
+
+    private class OnClick implements View.OnClickListener {
+
+        private Intent intent;
+
+        /**
+         * 监听器处理逻辑
+         *
+         * @param view
+         */
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.btn_01:
+                    intent = new Intent(MainActivity.this, TextViewActivity.class);
+                    break;
+                case R.id.btn_02:
+                    intent = new Intent(MainActivity.this, ButtonActivity.class);
+                    break;
+                case R.id.btn_03:
+                    intent = new Intent(MainActivity.this, EditTextActivity.class);
+                    break;
+                case R.id.btn_04:
+                    intent = new Intent(MainActivity.this, RadioButtonActivity.class);
+                    break;
             }
-        });
+            startActivity(intent);
+        }
     }
 }

@@ -32,4 +32,12 @@
             android:textAllCaps="false"
             android:text="@string/editview"
             android:layout_gravity="center"/>
+
+    <Button
+            android:id="@+id/btn_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/radiobutton"
+            android:layout_gravity="center"/>
 </LinearLayout>

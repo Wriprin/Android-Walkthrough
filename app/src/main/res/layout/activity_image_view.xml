@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".ImageViewActivity">
+
+    <ImageView
+            android:id="@+id/iv_01"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="@color/purple_200"
+            android:src="@drawable/src_background"
+            android:scaleType="fitXY" />
+
+    <ImageView
+            android:id="@+id/iv_02"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/iv_01"
+            android:layout_marginTop="15dp"
+            android:background="@color/purple_200"
+            android:src="@drawable/src_background"
+            android:scaleType="fitCenter"/>
+
+    <ImageView
+            android:id="@+id/iv_03"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/iv_02"
+            android:background="@color/purple_200"
+            android:src="@drawable/src_background"
+            android:scaleType="center" />
+
+    <ImageView
+            android:id="@+id/iv_04"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/iv_03"
+            android:background="@color/purple_200"
+            android:scaleType="center" />
+
+</RelativeLayout>

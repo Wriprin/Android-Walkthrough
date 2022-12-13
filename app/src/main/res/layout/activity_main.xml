@@ -49,4 +49,12 @@
             android:text="CheckBox"
             android:layout_gravity="center"/>
 
+    <Button
+            android:id="@+id/btn_06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ImageView"
+            android:layout_gravity="center"/>
+
 </LinearLayout>

@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 
+import cc.cnix.android_walkthrough.listview.ListViewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     // 声明对象
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRadioButton;
     private Button mBtnCheckBox;
     private Button mBtnImageView;
+    private Button mBtnListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton = findViewById(R.id.btn_04);
         mBtnCheckBox = findViewById(R.id.btn_05);
         mBtnImageView = findViewById(R.id.btn_06);
+        mBtnListView = findViewById(R.id.btn_07);
 
         // 注册监听器
         setListeners();
@@ -43,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton.setOnClickListener(onClick);
         mBtnCheckBox.setOnClickListener(onClick);
         mBtnImageView.setOnClickListener(onClick);
+        mBtnListView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -74,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_06:
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    break;
+                case R.id.btn_07:
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
                     break;
             }
             startActivity(intent);

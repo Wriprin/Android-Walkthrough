@@ -21,4 +21,11 @@
             android:text="HoriRecyclerView"
             android:textAllCaps="false"/>
 
+    <Button
+            android:id="@+id/btn_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GridRecyclerView"
+            android:textAllCaps="false"/>
+
 </LinearLayout>

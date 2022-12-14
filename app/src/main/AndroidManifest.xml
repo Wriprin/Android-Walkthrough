@@ -12,6 +12,12 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".recyclerview.LinearRecyclerViewActivity"
+                android:exported="true" />
+        <activity
+                android:name=".recyclerview.RecyclerViewActivity"
+                android:exported="true" />
+        <activity
                 android:name=".gridview.GridViewActivity"
                 android:exported="true" />
         <activity

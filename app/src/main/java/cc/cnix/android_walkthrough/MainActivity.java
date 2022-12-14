@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 
 import cc.cnix.android_walkthrough.gridview.GridViewActivity;
 import cc.cnix.android_walkthrough.listview.ListViewActivity;
+import cc.cnix.android_walkthrough.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnImageView;
     private Button mBtnListView;
     private Button mBtnGridView;
+    private Button mBtnRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView = findViewById(R.id.btn_06);
         mBtnListView = findViewById(R.id.btn_07);
         mBtnGridView = findViewById(R.id.btn_08);
+        mBtnRecyclerView = findViewById(R.id.btn_10);
 
         // 注册监听器
         setListeners();
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView.setOnClickListener(onClick);
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
+        mBtnRecyclerView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -89,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_08:
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_10:
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);

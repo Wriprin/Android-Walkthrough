@@ -15,6 +15,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     private Button mBtnLinear;
     private Button mBtnHori;
     private Button mBtnGrid;
+    private Button mBtnWaterFall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         mBtnLinear = findViewById(R.id.btn_01);
         mBtnHori = findViewById(R.id.btn_02);
         mBtnGrid = findViewById(R.id.btn_03);
+        mBtnWaterFall = findViewById(R.id.btn_04);
 
         // 监听事件
         setOnClickListener();
@@ -36,6 +38,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         mBtnLinear.setOnClickListener(onClickListener);
         mBtnHori.setOnClickListener(onClickListener);
         mBtnGrid.setOnClickListener(onClickListener);
+        mBtnWaterFall.setOnClickListener(onClickListener);
     }
 
     class onClickListener implements View.OnClickListener {
@@ -51,6 +54,9 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_03:
                     intent = new Intent(RecyclerViewActivity.this, GridRecyclerViewActivity.class);
+                    break;
+                case R.id.btn_04:
+                    intent = new Intent(RecyclerViewActivity.this, WaterFallRecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,25 +18,29 @@ import cc.cnix.android_walkthrough.R;
  * @Date: 2022/12/14 17:24
  * @Version 1.0
  */
-public class MyGridAdapter extends RecyclerView.Adapter<MyGridAdapter.LinearViewHolder> {
+public class MyStaggerAdapter extends RecyclerView.Adapter<MyStaggerAdapter.LinearViewHolder> {
 
     private Context mContext;
     private OnItemClickListener mListener;
 
-    public MyGridAdapter(Context context, OnItemClickListener listener) {
+    public MyStaggerAdapter(Context context, OnItemClickListener listener) {
         this.mContext = context;
         this.mListener = listener;
     }
 
     @NonNull
     @Override
-    public MyGridAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_grid_recyclerview_item, null));
+    public MyStaggerAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_stagger_item, null));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyGridAdapter.LinearViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        holder.mTvUserName.setText("@Wriprin");
+    public void onBindViewHolder(@NonNull MyStaggerAdapter.LinearViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        if (position % 2 != 0) {
+            holder.mIvShow.setImageResource(R.drawable.bg_01);
+        } else {
+            holder.mIvShow.setImageResource(R.drawable.bg_02);
+        }
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,17 +52,17 @@ public class MyGridAdapter extends RecyclerView.Adapter<MyGridAdapter.LinearView
 
     @Override
     public int getItemCount() {
-        return 100;
+        return 16;
     }
 
     class LinearViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView mTvUserName;
+        private ImageView mIvShow;
 
         public LinearViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            mTvUserName = itemView.findViewById(R.id.tv_01);
+            mIvShow = itemView.findViewById(R.id.iv_01);
         }
     }
 

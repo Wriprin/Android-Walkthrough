@@ -12,6 +12,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".recyclerview.WaterFallRecyclerViewActivity"
+                android:exported="true" />
+        <activity
                 android:name=".recyclerview.GridRecyclerViewActivity"
                 android:exported="true" />
         <activity

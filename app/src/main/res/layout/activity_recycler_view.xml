@@ -28,4 +28,11 @@
             android:text="GridRecyclerView"
             android:textAllCaps="false"/>
 
+    <Button
+            android:id="@+id/btn_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WaterFallRecyclerView"
+            android:textAllCaps="false"/>
+
 </LinearLayout>

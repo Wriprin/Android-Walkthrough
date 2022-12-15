@@ -9,6 +9,7 @@
             android:layout_height="wrap_content"
             android:text="UserName"
             android:textColor="@color/black"
+            android:padding="5dp"
             android:textSize="20sp"/>
 
 </RelativeLayout>

@@ -12,6 +12,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".ToastActivity"
+                android:exported="true" />
+        <activity
                 android:name=".WebViewActivity"
                 android:exported="true" />
         <activity

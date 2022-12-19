@@ -1,141 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <LinearLayout
-            android:id="@+id/ll_00"
+    <Button
+            android:id="@+id/btn_01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
-            tools:context=".MainActivity"
-            android:orientation="vertical">
+            android:text="UI"
+            android:textAllCaps="false" />
 
-        <Button
-                android:id="@+id/btn_01"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/textview"
-                android:layout_gravity="center" />
-
-        <Button
-                android:id="@+id/btn_02"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/button"
-                android:layout_gravity="center" />
-
-        <Button
-                android:id="@+id/btn_03"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/editview"
-                android:layout_gravity="center" />
-
-        <Button
-                android:id="@+id/btn_04"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/radiobutton"
-                android:layout_gravity="center" />
-
-        <Button
-                android:id="@+id/btn_05"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="CheckBox"
-                android:layout_gravity="center" />
-
-        <Button
-                android:id="@+id/btn_06"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="ImageView"
-                android:layout_gravity="center" />
-
-        <Button
-                android:id="@+id/btn_07"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="ListView"
-                android:layout_gravity="center" />
-
-        <Button
-                android:id="@+id/btn_08"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="GridView"
-                android:layout_gravity="center" />
-
-        <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="wrap_content">
-
-                <Button
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:text="HorizontalScrollViewTest01" />
-
-                <Button
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:text="HorizontalScrollViewTest02" />
-
-                <Button
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:text="HorizontalScrollViewTest03" />
-
-                <Button
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:text="HorizontalScrollViewTest04" />
-            </LinearLayout>
-        </HorizontalScrollView>
-
-        <Button
-                android:id="@+id/btn_10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RecyclerView"
-                android:textAllCaps="false"/>
-
-        <Button
-                android:id="@+id/btn_11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="WebView"
-                android:textAllCaps="false"/>
-
-        <Button
-                android:id="@+id/btn_12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Toast"
-                android:textAllCaps="false"/>
-
-        <Button
-                android:id="@+id/btn_09"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="ScrollViewTest"
-                android:layout_marginTop="300dp"
-                android:layout_gravity="center" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

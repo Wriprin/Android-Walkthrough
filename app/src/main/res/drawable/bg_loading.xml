@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:drawable="@drawable/icon_loading"
+        android:pivotX="50%"
+        android:pivotY="50%">
+    <!--
+        pivotX: 旋转或缩放视图的枢轴点的 X 坐标
+        pivotY: 旋转或缩放视图的枢轴点的 Y 坐标
+    -->
+</animated-rotate>

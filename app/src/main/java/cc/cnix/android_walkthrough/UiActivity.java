@@ -26,6 +26,7 @@ public class UiActivity extends AppCompatActivity {
     private Button mBtnWebView;
     private Button mBtnToast;
     private Button mBtnAlertDialog;
+    private Button mBtnProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnWebView = findViewById(R.id.btn_11);
         mBtnToast = findViewById(R.id.btn_12);
         mBtnAlertDialog = findViewById(R.id.btn_13);
+        mBtnProgress = findViewById(R.id.btn_14);
 
         // 注册监听器
         setListeners();
@@ -64,6 +66,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
         mBtnAlertDialog.setOnClickListener(onClick);
+        mBtnProgress.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -113,6 +116,9 @@ public class UiActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_13:
                     intent = new Intent(UiActivity.this, AlertDialogActivity.class);
+                    break;
+                case R.id.btn_14:
+                    intent = new Intent(UiActivity.this, ProgressActivity.class);
                     break;
             }
             startActivity(intent);

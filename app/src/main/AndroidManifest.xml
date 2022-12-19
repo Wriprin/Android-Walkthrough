@@ -12,6 +12,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".ProgressActivity"
+                android:exported="true" />
+        <activity
                 android:name=".AlertDialogActivity"
                 android:exported="true" />
         <activity

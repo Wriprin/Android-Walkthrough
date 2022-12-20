@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_custom_dialog">
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Title"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+    <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Message"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:gravity="center" />
+
+    <View
+            android:id="@+id/v_01"
+            android:layout_width="match_parent"
+            android:background="#808080"
+            android:layout_height="1dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+        <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textSize="20sp"
+                android:textColor="@color/grey"
+                android:gravity="center" />
+
+        <View
+                android:id="@+id/v_02"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"/>
+
+        <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="确认"
+                android:textSize="20sp"
+                android:textColor="#ff0000"
+                android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

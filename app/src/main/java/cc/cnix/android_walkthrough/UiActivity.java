@@ -28,6 +28,7 @@ public class UiActivity extends AppCompatActivity {
     private Button mBtnAlertDialog;
     private Button mBtnProgress;
     private Button mBtnCustomDialog;
+    private Button mBtnPopupWindow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnAlertDialog = findViewById(R.id.btn_13);
         mBtnProgress = findViewById(R.id.btn_14);
         mBtnCustomDialog = findViewById(R.id.btn_15);
+        mBtnPopupWindow = findViewById(R.id.btn_16);
 
         // 注册监听器
         setListeners();
@@ -70,6 +72,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnAlertDialog.setOnClickListener(onClick);
         mBtnProgress.setOnClickListener(onClick);
         mBtnCustomDialog.setOnClickListener(onClick);
+        mBtnPopupWindow.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -125,6 +128,9 @@ public class UiActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_15:
                     intent = new Intent(UiActivity.this, CustomDialogActivity.class);
+                    break;
+                case R.id.btn_16:
+                    intent = new Intent(UiActivity.this, PopupWindowActivity.class);
                     break;
             }
             startActivity(intent);

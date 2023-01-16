@@ -164,6 +164,13 @@
                 android:textAllCaps="false"/>
 
         <Button
+                android:id="@+id/btn_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LifeCycleActivity"
+                android:textAllCaps="false"/>
+
+        <Button
                 android:id="@+id/btn_09"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

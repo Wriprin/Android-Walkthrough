@@ -30,6 +30,7 @@ public class UiActivity extends AppCompatActivity {
     private Button mBtnCustomDialog;
     private Button mBtnPopupWindow;
     private Button mBtnManual;
+    private Button mBtnLifeCycle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnCustomDialog = findViewById(R.id.btn_15);
         mBtnPopupWindow = findViewById(R.id.btn_16);
         mBtnManual = findViewById(R.id.btn_17);
+        mBtnLifeCycle = findViewById(R.id.btn_18);
 
         // 注册监听器
         setListeners();
@@ -76,6 +78,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnCustomDialog.setOnClickListener(onClick);
         mBtnPopupWindow.setOnClickListener(onClick);
         mBtnManual.setOnClickListener(onClick);
+        mBtnLifeCycle.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -137,6 +140,9 @@ public class UiActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_17:
                     intent = new Intent(UiActivity.this, ManualActivity.class);
+                    break;
+                case R.id.btn_18:
+                    intent = new Intent(UiActivity.this, LifeCycleActivity.class);
                     break;
             }
             startActivity(intent);

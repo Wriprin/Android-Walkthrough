@@ -12,10 +12,13 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".LifeCycleActivity"
+                android:exported="true" />
+        <activity
                 android:name=".ManualActivity"
                 android:exported="true"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-                android:screenOrientation="landscape"/>
+                android:screenOrientation="landscape"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
                 android:name=".PopupWindowActivity"
                 android:exported="true" />

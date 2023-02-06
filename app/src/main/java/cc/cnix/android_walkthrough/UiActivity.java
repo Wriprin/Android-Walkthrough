@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import cc.cnix.android_walkthrough.gridview.GridViewActivity;
+import cc.cnix.android_walkthrough.jump.AActivity;
 import cc.cnix.android_walkthrough.listview.ListViewActivity;
 import cc.cnix.android_walkthrough.recyclerview.RecyclerViewActivity;
 
@@ -31,6 +32,7 @@ public class UiActivity extends AppCompatActivity {
     private Button mBtnPopupWindow;
     private Button mBtnManual;
     private Button mBtnLifeCycle;
+    private Button mBtnJump;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnPopupWindow = findViewById(R.id.btn_16);
         mBtnManual = findViewById(R.id.btn_17);
         mBtnLifeCycle = findViewById(R.id.btn_18);
+        mBtnJump = findViewById(R.id.btn_19);
 
         // 注册监听器
         setListeners();
@@ -79,6 +82,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnPopupWindow.setOnClickListener(onClick);
         mBtnManual.setOnClickListener(onClick);
         mBtnLifeCycle.setOnClickListener(onClick);
+        mBtnJump.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -143,6 +147,9 @@ public class UiActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_18:
                     intent = new Intent(UiActivity.this, LifeCycleActivity.class);
+                    break;
+                case R.id.btn_19:
+                    intent = new Intent(UiActivity.this, AActivity.class);
                     break;
             }
             startActivity(intent);

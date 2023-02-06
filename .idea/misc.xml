@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_aactivity.xml" value="0.14285714285714285" />
+        <entry key="..\:/Lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_bactivity.xml" value="0.22" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/drawable/bg_btn02.xml" value="0.2388888888888889" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/drawable/bg_btn03.xml" value="0.2388888888888889" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/drawable/bg_btn04.xml" value="0.2388888888888889" />
@@ -13,7 +15,9 @@
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/drawable/selector_checkbox.xml" value="0.30168776371308015" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/drawable/selector_custom_dialog.xml" value="0.2101851851851852" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/drawable/selector_radiobutton.xml" value="0.30168776371308015" />
+        <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_aactivity.xml" value="0.22" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_alert_dialog.xml" value="0.14285714285714285" />
+        <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_bactivity.xml" value="0.22" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_button.xml" value="0.22" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_check_box.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Wriprin/Desktop/lib/Android/Android-Walkthrough/app/src/main/res/layout/activity_custom_dialog.xml" value="0.22" />

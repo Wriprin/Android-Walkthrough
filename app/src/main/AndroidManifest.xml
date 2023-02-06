@@ -12,6 +12,19 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidWalkthrough">
         <activity
+                android:name=".jump.BActivity"
+                android:label="B"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="cc.cnix.jump.B" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".jump.AActivity"
+                android:label="A"
+                android:exported="true" />
+        <activity
                 android:name=".LifeCycleActivity"
                 android:exported="true" />
         <activity
